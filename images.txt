@@ -1,0 +1,15 @@
+--> Find avaiable volumes for an image
+docker pull parity/polkadot:latest
+docker image inspect parity/polkadot:latest
+
+----
+"Volumes": {
+                "/polkadot": {}
+            },
+---
+
+--> Remove all images
+docker rmi $(docker images -q)
+
+--> List all images
+docker images -a

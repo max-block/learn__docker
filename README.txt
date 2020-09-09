@@ -2,12 +2,6 @@
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 
---> Remove all images
-docker rmi $(docker images -q)
-
---> List all images
-docker images -a
-
 --> List all volumes
 docker volume ls
 
