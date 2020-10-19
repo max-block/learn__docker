@@ -1,3 +1,6 @@
+--> Override entrypoint
+docker run -it --entrypoint /bin/bash [docker_image]
+
 --> Stop and remove all containers
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
